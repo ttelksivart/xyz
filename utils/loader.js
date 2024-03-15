@@ -12,5 +12,6 @@ export const load = {
 		loadSprite("brick0", "./assets/brick0.png")
 		loadSprite("orbPlayer", "./assets/orbPlayer.png")
 		loadSprite("black", "./assets/black.png")
+		loadSprite("menu00", "./assets/menu00.png")
 	},
 }

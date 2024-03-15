@@ -47,16 +47,43 @@ class UIManager {
 			anchor("center"),
 			pos(380,350),
 			scale(1),])
-
+		add([sprite("menu00"),
+			anchor("center"),
+			pos(380,255),
+			scale(3)])
+		add([sprite("menu00"),
+			anchor("center"),
+			pos(380,350),
+			scale(3)])
+		add([sprite("menu00"),
+			anchor("center"),
+			pos(380,445),
+			scale(3)])
 	}
 	displayFrame() {
 		add([sprite('frame'),])
+		add([sprite("button01"),
+			anchor("center"),
+			pos(585, 825),
+			scale(6.5)])
+		add([sprite("button01"),
+			anchor("center"),
+			pos(460, 865),
+			scale(6.5)])
 		onKeyPress("space", () => {
 			go("menu0")
 		})
 	}
 	displayFrameOFF() {
 		add([sprite('frameOFF'),])
+		add([sprite("button01"),
+			anchor("center"),
+			pos(585, 825),
+			scale(6.5)])
+		add([sprite("button01"),
+			anchor("center"),
+			pos(460, 865),
+			scale(6.5)])
 	}
 	}
 export const uiManager = new UIManager()

@@ -20,27 +20,21 @@ const scenes = {
 		uiManager.displayFrame()
 	},
 	sett: () => {
-
 		uiManager.displayFrame();
 	},
 	controls: () => {
-
 		uiManager.displayFrame();
 	},
 	lvl0: () => {
-
 		uiManager.displayFrame();
 	},
 	overWrld: () => {
-
 		uiManager.displayFrame();
 	},
 	gameover: () => {
-
 		uiManager.displayFrame();
 	},
 	win: () => {
-
 		uiManager.displayFrame();
 	},
 }
