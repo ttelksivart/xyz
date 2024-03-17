@@ -4,9 +4,9 @@ import { uiManager } from "./utils/UIManager.js"
 import { load } from "./utils/loader.js"
 // init kaboomjs
 kaboom({
-	width: 750,
-	height: 1330,
-	scale: 0.69,
+	width: 580,
+	height: 1020,
+	scale:0.69,
 })
 load.assets()
 // scenes

@@ -2,11 +2,11 @@ class UIManager {
 	displayBlinkingUIMessage(content, position) {
 		const message0 = add([
 			text(content, {
-				size:34,
+				size:32,
 			}),
 			area(),
 			anchor("center"),
-			pos(380,520),
+			pos(300,160),
 			opacity(),
 			state("flash-up", ["flash-up", "flash-down"])
 			])
@@ -34,10 +34,10 @@ class UIManager {
 	displaySpaceMenu() {
 		add([sprite("black"),
 			anchor("center"),
-			pos(380,350),
+			pos(285,300),
 			scale(1),])
 	this.displayBlinkingUIMessage(
-		"spacebar = power switch")
+		"REMEMBER TO SAVE!")
 	onKeyPress("space", () => {
 		go("menu1")
 	})
@@ -45,45 +45,100 @@ class UIManager {
 	displayMenu() {
 		add([sprite("back00"),
 			anchor("center"),
-			pos(380,350),
-			scale(1),])
+			pos(285,260),
+			scale(.8),])
 		add([sprite("menu00"),
 			anchor("center"),
-			pos(380,255),
-			scale(3)])
+			pos(295,175),
+			scale(2.5)])
 		add([sprite("menu00"),
 			anchor("center"),
-			pos(380,350),
-			scale(3)])
+			pos(295,260),
+			scale(2.5)])
 		add([sprite("menu00"),
 			anchor("center"),
-			pos(380,445),
-			scale(3)])
+			pos(295,345),
+			scale(2.5)])
+
 	}
 	displayFrame() {
-		add([sprite('frame'),])
+		add([sprite("frame"),])
+		add([sprite("pwrbutton"),
+			anchor("center"),
+			pos(58, 440),
+			scale(3)])
+		add([sprite("button00"),
+			anchor("center"),
+			pos(515, 620),
+			scale(6.25)])
 		add([sprite("button01"),
 			anchor("center"),
-			pos(585, 825),
-			scale(6.5)])
-		add([sprite("button01"),
+			pos(400, 650),
+			scale(6.25)])
+		add([sprite("button02"),
 			anchor("center"),
-			pos(460, 865),
-			scale(6.5)])
+			pos(480, 730),
+			scale(6.25)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(140, 600),
+			scale(5.69)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(140, 770),
+			scale(5.69),
+			rotate(180)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(225, 685),
+			scale(5.69),
+			rotate(90)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(55, 685),
+			scale(5.69),
+			rotate(270)])
 		onKeyPress("space", () => {
 			go("menu0")
 		})
 	}
 	displayFrameOFF() {
 		add([sprite('frameOFF'),])
+		add([sprite("pwrbutton"),
+			anchor("center"),
+			pos(58, 440),
+			scale(3)])
+		add([sprite("button00"),
+			anchor("center"),
+			pos(515, 620),
+			scale(6.25)])
 		add([sprite("button01"),
 			anchor("center"),
-			pos(585, 825),
-			scale(6.5)])
-		add([sprite("button01"),
+			pos(400, 650),
+			scale(6.25)])
+		add([sprite("button02"),
 			anchor("center"),
-			pos(460, 865),
-			scale(6.5)])
+			pos(480, 730),
+			scale(6.25)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(140, 600),
+			scale(5.69)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(140, 770),
+			scale(5.69),
+			rotate(180)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(225, 685),
+			scale(5.69),
+			rotate(90)])
+		add([sprite("button03"),
+			anchor("center"),
+			pos(55, 685),
+			scale(5.69),
+			rotate(270)])
 	}
 	}
 export const uiManager = new UIManager()
